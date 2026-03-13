@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skinaura Register</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#f8d7da,#f5b7c2,#fce4ec);
+}
+
+.register-box{
+width:350px;
+padding:40px;
+background:rgba(255,255,255,0.15);
+border-radius:15px;
+backdrop-filter:blur(10px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.register-box h2{
+color:#fff;
+margin-bottom:25px;
+}
+
+.input-box{
+position:relative;
+margin-bottom:20px;
+}
+
+.input-box input{
+width:100%;
+padding:12px 40px;
+border:none;
+outline:none;
+border-radius:25px;
+background:rgba(255,255,255,0.3);
+color:#fff;
+font-size:14px;
+}
+
+.input-box input::placeholder{
+color:#fff;
+}
+
+.input-box i{
+position:absolute;
+top:50%;
+left:15px;
+transform:translateY(-50%);
+color:white;
+}
+
+.register-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:25px;
+background:#ff6f91;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.register-btn:hover{
+background:#ff4f7a;
+}
+
+.extra{
+margin-top:15px;
+font-size:14px;
+color:black;
+}
+
+.extra a{
+color:rgb(238, 74, 129);
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="register-box">
+
+<h2>Create Account</h2>
+
+<form>
+
+<div class="input-box">
+<i class="fa fa-user"></i>
+<input type="text" placeholder="Full Name" required>
+</div>
+
+<div class="input-box">
+<i class="fa fa-envelope"></i>
+<input type="email" placeholder="Email" required>
+</div>
+
+<div class="input-box">
+<i class="fa fa-lock"></i>
+<input type="password" placeholder="Password" required>
+</div>
+
+<div class="input-box">
+<i class="fa fa-lock"></i>
+<input type="password" placeholder="Confirm Password" required>
+</div>
+
+<button class="register-btn">Register</button>
+
+<div class="extra">
+<p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
